@@ -1,0 +1,29 @@
+mixin mob-mnu()
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js.on
+			span
+		+e.inner
+			+e.logo(href='/')
+				img.res-i(src="img/svg/logo.svg" alt="logo" loading="lazy")
+			+mnu()
+			+signUp().sm
+			+e.tel(href="tel:+74722373637") +7 (4722) 37-36-37
+			+e.row.row.align-items-center
+				.col-auto
+					+download('app-store')
+				.col-auto
+					+download('google-play')
+
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy.d-none.d-lg-block
+		.container
+			.row.align-items-center
+				.col 
+					+mnu
+				.col-auto
+					+soc
+
+
+	// end top-nav

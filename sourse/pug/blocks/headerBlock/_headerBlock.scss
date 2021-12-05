@@ -1,0 +1,102 @@
+// start .headerBlock
+.headerBlock {
+	--sTPB: #{rem(15)};
+	--sPB: #{rem(10)};
+	--sPT: #{rem(115)};
+
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(150)};
+	}
+
+	@media (min-width: 1370px) {
+		--sPT: #{rem(190)};
+	}
+	margin-bottom: 1px;
+	min-height: 100vh;
+	@include media-breakpoint-up(md) {
+		min-height: calc(100vh - #{rem(15)});
+	}
+	@media (min-width: 1370px) {
+		min-height: calc(100vh - #{rem(30)});
+	}
+	// min-height: calc(var(--vh, 1vh) * 100);
+	color: #fff;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	&__main {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h1 {
+		margin-bottom: 1px;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		margin-bottom: 1px;
+	}
+
+	&__location {
+		display: flex;
+		align-items: center;
+		margin-bottom: rem(15);
+
+		.icon {
+			margin-right: rem(5);
+			font-size: rem(15);
+		}
+	}
+
+	.section-title {
+		max-width: rem(650);
+	}
+
+	p {
+		max-width: rem(360);
+	}
+
+	&__btnWrap {
+		@include media-breakpoint-up(md) {
+			padding-top: rem(20);
+		}
+	}
+
+	&__addres {
+		@include media-breakpoint-up(lg) {
+			margin-top: auto;
+			padding-top: rem(70);
+		}
+		padding-top: rem(20);
+		max-width: rem(190);
+		@include media-breakpoint-down(lg) {
+			margin-left: rem(16);
+		}
+	}
+
+	h5 {
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: rem(18);
+	}
+
+	.signUp {
+		width: rem(253);
+	}
+
+	.soc {
+		margin-top: auto;
+	}
+
+	@include media-breakpoint-up(xs) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xs) {
+	}
+} // end.headerBlock

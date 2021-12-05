@@ -1,0 +1,18 @@
+
+mixin modal() 
+	//  start modals
+
+	+b.modal-win(id="modal-call" class=" " style="display: none" )
+		+form-wrap
+			.text-center
+				+e.title.form-data.h2.ttu Сделать подарок
+				p.after-headline Оставьте заявку, чтобы наш администратор связался с&nbsp;Вами для оформления заказа.
+			+input("E-mail", 'email')(required)
+			+input("Имя")(required)
+			+input("Номер телефона",'tel')(required)
+			+e.btnWrap
+				+e.BUTTON.btn.btn.btn-dark(type="submit" ) оставить заявку
+			//- +polite()
+			// #modal-call
+
+			// end modals

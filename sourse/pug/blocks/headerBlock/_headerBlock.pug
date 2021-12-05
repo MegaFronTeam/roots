@@ -1,0 +1,34 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock#headerBlock&attributes(attributes)
+		+pic('header-bg.jpg','bg')(class="picture-bg")
+		block
+		+e.main.container.section
+			+e.location
+				+icon('location')
+				span Барбершоп Белгород
+			+b.section-title
+				h1 ROOTS&nbsp;&mdash; ЭТО НЕ&nbsp;ПРОСТО МУЖСКАЯ ПАРИКМАХЕРСКАЯ
+			p Это уникальное явление в&nbsp;сфере барберинга. Записывайся на&nbsp;стрижку и&nbsp;убедись сам.
+			+e.btnWrap 
+				+signUp
+
+			+soc-sm().d-lg-none
+			+e.addres 
+				h5 Наш адрес
+				p Белгород, Гражданский проспект, 25
+
+
+	// end headerBlock
+
+mixin signUp(gift)
+	if gift 
+		+b.signUp.link-modal-js(href='#modal-call' data-title="Сделать подарок")&attributes(attributes)
+			+e.text Сделать подарок
+			+e.calendar 
+				+icon('gift')
+	else
+		+b.signUp.link-modal-js(href='#modal-call' data-title="Записаться на стрижку")&attributes(attributes)
+			+e.text Записаться
+			+e.calendar 
+				+icon('calendar')
