@@ -58,3 +58,9 @@
 		background: $black;
 	}
 }
+
+.select2-dropdown .select2-dropdown--below 
+.select2-results__options .select2-results__option 
+.select2-results__option--selectable:hover{
+	background: #ddd;
+}
