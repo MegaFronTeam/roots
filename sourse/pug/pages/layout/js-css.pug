@@ -3,11 +3,14 @@ mixin allcss()
 	//- link(rel="stylesheet" href="libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css")
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-	link(href="css/main.min.css" rel="stylesheet")
-
-mixin allcjs()
 	link(href="libs/swiper/css/swiper.min.css" rel="stylesheet") 
 	link(href="libs/@fancyapps/fancybox/jquery.fancybox.min.css" rel="stylesheet")
+	link(rel="stylesheet" href="libs/select2/css/select2.min.css")
+	
+	
+	link(href="css/main.min.css" rel="stylesheet")
+mixin allcjs()
+	
 	//- script(src="js/libs.js")
 
 	//- script(src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js")
@@ -18,10 +21,15 @@ mixin allcjs()
 	// modal libs
 	// slider libs
 	script(src="libs/swiper/js/swiper.min.js") 
-	// /slider libs
 
+	// /slider
+	// select2  
+	script(src="libs/select2/js/select2.full.min.js") 
+	
 	script(src="libs/inputmask/inputmask.min.js")
+	
 	script(src="js/common.js")
+
 	//- cut text libs
 	//- script(src="libs/jquery.morelines.min.js")
 

@@ -1,0 +1,60 @@
+// start .sFilter
+.sFilter {
+	// --sPT: ;
+	// --sPB: ;
+	// --sTPB: ;
+
+	padding: 26px 0;
+	margin-bottom: 36px;
+
+	background: $secondary;
+	&__select{
+		display: block;
+		width: rem(335);
+		margin: 0 auto;
+	}	
+	@media screen and (max-width: 1199.98px) {
+		padding: 26px;
+		&__item .select2-container--default {
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.select2-container--default{
+			max-width: 100%;
+		}
+		&__col:not(:last-of-type){
+			.select2-container--default{
+				padding-bottom: 26px;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sFilter
+
+
+.select2-selection__arrow{
+	&::before{
+		content: '';
+		display: block;
+		width: 14px;
+    height: 18px;
+		background-image: url('../img/svg/efive.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 14px 18px;
+	}
+}
+
+.select2-container--open{
+	.select2-selection__arrow{
+		&::before{
+			background-image: url('../img/svg/arrow-white.svg');
+		}
+	}
+	.select2-selection--single{
+		background: $black;
+	}
+}

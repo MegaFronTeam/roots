@@ -1,14 +1,14 @@
 'use strict';
 
-const fs = require('fs')
-const path = require('path')
-const colors = require('colors')
-const readline = require('readline')
+import fs from 'fs'
+import path from 'path'
+import colors from 'colors'
+import readline from 'readline'
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 
 // folder with all blocks
-const BLOCKS_DIR = path.join(__dirname, 'sourse/pug/blocks');
+const BLOCKS_DIR = path.join('sourse/pug/blocks');
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -349,11 +349,18 @@ function eventHandler() {
       }
     }
   }
-  makeDDGroup(['.sVacancies', '.dd-price-js']);
-
+  makeDDGroup(['.sVacancies', '.dd-price-js', '.haircut-help']);
+	$('.sFilter__item').each(function(){
+		let th= $(this);
+		th.find('.js-example-basic-single').select2({
+			dropdownParent: th,
+			Infinity: false,
+		});	
+	})
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
 } else {
 	document.addEventListener('DOMContentLoaded', eventHandler);
 }
+

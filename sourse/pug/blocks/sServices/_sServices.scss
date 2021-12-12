@@ -1,0 +1,158 @@
+// start .sServices
+.sServices {
+	// --sPT: ;
+	// --sPB: ;
+	// --sTPB: ;
+	padding: 0;
+	font-size: 15px;
+	p{
+		margin-bottom: 25px;
+	}
+
+	
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sServices
+
+.offer-about{
+	font-size: 18px;
+	padding: 24px;
+	background: $secondary;
+	p{
+		margin: 0;
+	}
+	&__span{
+		font-weight: 800;
+	}
+}
+.offer-text{
+	margin: 56px 97px;
+	&__title{
+		line-height: 1.5;
+		font-size: 25px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	&__span{
+		max-width: 115px;
+		display: block;
+		background: $green;
+		color: $white;
+		padding: 4px 18px;
+		position: relative;
+		right: 18px;
+		transform: rotate(0.9deg)
+	}
+
+}
+
+.haircut-technology{
+	padding: 48px 0 0;
+}
+
+.tools-item{
+	text-align: center;
+	// margin-bottom: 26px;
+	height: 100%;
+	&__title{
+		margin: 20px 0 0;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
+	&__img-wrap{
+		height: 180px;
+		line-height: 180px;
+		vertical-align: middle;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			top: 0;
+			background: $secondary;
+			width: 100%;
+			height: 100%;
+			transform: rotate(var(--angle, -2.82deg));
+		}
+	}
+}
+
+.haircut-tools {
+	h2{
+		margin-bottom: 40px;
+	}
+	&__col{
+		&:nth-child(6n + 2){
+			--angle: 6.77deg;
+		}
+		&:nth-child(6n + 3){
+			--angle: -3.55deg;
+		}
+		&:nth-child(6n + 4){
+			--angle: 7.43deg;
+		}
+		&:nth-child(4){
+			.tools-item__image{
+				margin-left: -10px;
+			}
+		}
+		&:nth-child(6n + 5){
+			--angle: -4.32deg;
+		}
+		&:nth-child(6n + 6){
+			--angle: 3.81deg;
+		}
+		&:nth-child(6){
+			.tools-item__image{
+				margin-top: -20px;
+			}
+		}
+	}
+}
+
+.about-tools{
+	margin: 33px 0 0;
+	li {
+		display: inline-block;
+		color: $white;
+		background: $black;
+		margin-bottom: 8px;
+		padding: 6px 9px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 1199.98px) {
+	.offer-text{
+		margin: 20px 97px 0;
+	}
+	.tools-item{
+		margin-top: 33px;
+	}
+}
+
+@media screen and (max-width: 991.98px) {
+	.offer-text{
+		margin: 46px 97px;
+		max-width: 260px;
+	}
+	.offer-image img{
+		margin: 0	auto;
+		display: block;
+	}
+}
+@media screen and (max-width: 575.98px) {
+	.tools-item{
+		max-width: 200px;
+		margin: 33px auto 0;
+	}
+	.offer-text{
+		margin: 26px auto;
+		max-width: 260px;
+	}
+}

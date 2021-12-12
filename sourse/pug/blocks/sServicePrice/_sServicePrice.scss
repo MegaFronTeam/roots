@@ -1,0 +1,20 @@
+// start .sServicePrice
+.sServicePrice {
+	// --sPT: ;
+	// --sPB: ;
+	// --sTPB: ;
+	p{
+		margin-bottom: 25px;
+	}
+	
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sServicePrice
+
+.service-price{
+	h2{
+		margin-bottom: 40px;
+	}
+}

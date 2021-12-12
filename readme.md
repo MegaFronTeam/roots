@@ -6,3 +6,4 @@
 6. <https://megafronteam.github.io/roots/public/04_3-sbout.html>
 7. <https://megafronteam.github.io/roots/public/04_4-sbout.html>
 8. <https://megafronteam.github.io/roots/public/04_5-sbout.html>
+9. <https://megafronteam.github.io/roots/public/04_6-sbout.html>

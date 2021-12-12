@@ -88,12 +88,12 @@
 @include media-breakpoint-down(xs) {
 }
 
-.form-check {
-}
-.form-check-input {
-}
-.form-check-label {
-}
+// .form-check {
+// }
+// .form-check-input {
+// }
+// .form-check-label {
+// }
 
 // .custom-input{
 // 	display: block;
@@ -239,22 +239,37 @@ input::-webkit-inner-spin-button {
 .select2-container--default {
 	display: block;
 	outline: 0 !important;
+	margin: 0 auto;
+	.select2-search__field{
+		display: none;
+	}
 	.select2-selection--single {
 		border-radius: 0;
 		border: none;
-		border-bottom: solid 1px;
 		height: auto;
+		
 		font-size: rem(24px);
 		outline: 0 !important;
-		.select2-selection__arrow b {
-			border-color: $success transparent transparent transparent;
-			border-style: solid;
-			border-width: 7px 7px 0 7px;
+		padding: 7px 14px;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 600;
+		.select2-selection__rendered{
+			color: $black;
+		}
+		.select2-selection__arrow{
+			right: 14px;
+			top: 11px;
+			b{
+				border-color: $secondary transparent transparent transparent;
+				border-style: solid;
+				border-width: 0;
+			}
 		}
 		.select2-selection__rendered {
 			white-space: normal;
 			padding-left: 0;
-			padding-bottom: 5px;
+			// padding-bottom: 5px;
 		}
 	}
 }
@@ -262,10 +277,40 @@ input::-webkit-inner-spin-button {
 	.select2-selection--single
 	.select2-selection__arrow
 	b {
-	border-color: transparent transparent $success transparent;
-	border-width: 0 7px 7px 7px;
+	border-color: transparent transparent $secondary transparent;
+	border-width: 0;
 }
 .select2-container--default
 	.select2-results__option--highlighted[aria-selected] {
-	background-color: $success;
+	background-color: $black;
+}
+.first-item{
+	.select2-container--default{
+		margin-right: 0;
+	}
+}
+.third-item{
+	.select2-container--default{
+		margin-left: 0;
+	}
+}
+.select2-search--dropdown {
+	display: block;
+	padding: 0;
+}
+.select2-container--open{
+	.select2-dropdown--above, .select2-dropdown--below{
+		border: none;
+	}
+}
+.select2-container--default .select2-results__option--highlighted{
+	&[aria-selected]{
+		background-color: $white;
+	}
+	&.select2-results__option--selectable {
+		color: $black;
+	}
+}
+.select2-results__option--selectable{
+	font-weight: 600;
 }

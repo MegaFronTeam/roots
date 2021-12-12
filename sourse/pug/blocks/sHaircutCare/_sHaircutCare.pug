@@ -1,0 +1,48 @@
+mixin sHaircutCare(data)
+	// start sHaircutCare
+	+b.SECTION.sHaircutCare.section#sHaircutCare&attributes(attributes)
+		.container
+			+b.haircut-care
+				.row
+					.col-12.col-sm-8 
+						h2 Как ухаживать за стрижкой самому
+				.row 
+					.col-12.col-sm-6 
+						p
+							|	Выходите из парикмахерской красивым, а дома
+							| все уже не так круто смотрится. Это уже в
+							| прошлом. Наши стайлинги очень удобно
+							| использовать в домашних условиях. 
+					.col-12.col-sm-6 
+						p
+							| Грамотно подобранная стрижка и укладочное средство,
+							| освободят вам пол часа времени на уход за собой ведь
+							| после консультации с мастером, вы сможете уложить
+							| стрижку не хуже чем это бы сделал сам мастер.
+			+b.haircut-help 
+				.row 
+					.col-12.col-md-6 
+						+b.accardion--js 
+							+e.head--js.haircut-help-accordion__h
+								h5 Помогут ли мне с выбором стрижки?
+								+e.IMG(src='img/svg/arrow-r.svg').i
+							+e.content--js.haircut-help-accordion__p
+								p От 45 минут до 1 часа. 
+						+b.accardion--js 
+							+e.head--js.haircut-help-accordion__h
+								h5 Помогут ли мне с выбором стрижки?
+								+e.IMG(src='img/svg/arrow-r.svg').i
+							+e.content--js.haircut-help-accordion__p
+								p От 45 минут до 1 часа. 
+						+b.accardion--js 
+							+e.head--js.haircut-help-accordion__h
+								h5 Помогут ли мне с выбором стрижки?
+								+e.IMG(src='img/svg/arrow-r.svg').i
+							+e.content--js.haircut-help-accordion__p
+								p От 45 минут до 1 часа.
+					.col-12.col-md-6 
+						+b.help-questions
+							+pic('roots.png','','')
+							+e.wrapper
+								p Вопросы и ответы
+	// end sHaircutCare
