@@ -1,13 +1,13 @@
 // start .sHaircutCare
 .sHaircutCare {
 	--sPT: 0;
-	--sPB: 149px;
+	--sPB: 40px;
 	// --sTPB: ;
-	border-top: 3px dashed $secondary;
 	.haircut-care{
 		h2{
 			margin-bottom: 20px;
 			margin-top: 5px;
+			font-size: 24px;
 		}
 		// .haircut-help{
 			
@@ -37,18 +37,19 @@
 		background: $black;
 		padding: 8px;
 		transform: rotate(13.96deg) translateX(-50%);
-		top: rem(38);
-		left: 50%;
+		top: rem(48);
+		left: 48%;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+.haircut-technology{
+	h2{
+		margin-bottom: 24px;
 	}
 }
 .haircut-help{
 	margin-top: 77px;
-}
-.string{	
-	height: 3px;
-	width: 100%;
-	margin-bottom: -96px;
-	border-bottom: 3px dashed $secondary;
 }
 .accardion {
 	margin-bottom: rem(0);
@@ -125,7 +126,6 @@
 		transition: transform 0.5s ease;
 	}
 }
-
 .accardion__content{
 	padding-top: 25px;
 	padding-bottom: 0;
@@ -139,13 +139,5 @@
 		&__wrapper{
 			top: rem(20);
 		}
-	}
-	.string{	
-		margin-bottom: -58px;
-	}
-}
-@media screen and (max-width: 439.98px) {
-	.string{	
-		margin-bottom: -78px;
 	}
 }

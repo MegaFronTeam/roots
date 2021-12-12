@@ -6,12 +6,12 @@ mixin sFilter()
 				+e.col.col-xl-4.col-12.justify-content-md-center
 					+e.item
 						+e.SELECT(name = 'state' placeholder="ауауа").select.js-example-basic-single
-							+e.OPTION(value= dis).option= dis 
+							+e.OPTION(value= dis hidden).option= dis 
 							- arr = arr.split(";")
 							- for(let i = 0; i < arr.length; i++){
 							+e.OPTION(value= arr[i]).option= arr[i] 
 							- }
 			+item("Длина стрижки","Короткая;Средняя;Длинная")
 			+item("Услуга","Стрижка")
-			+item("Уровень","Начинающий специалист;Мастер;Топ-мастер")
+			+item("Уровень","Мастер;Топ-мастер;Амбассадор")
 	// end sFilter
