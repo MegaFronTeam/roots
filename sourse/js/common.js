@@ -355,6 +355,7 @@ function eventHandler() {
 		th.find('.js-example-basic-single').select2({
 			dropdownParent: th,
 			Infinity: false,
+			// Placeholder: $(this).data("placeholder")
 		});	
 	})
 };
